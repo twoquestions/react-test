@@ -79,7 +79,9 @@ const App: React.FC = () => {
               description: taskname,
             }, ...sheets]);
             setTaskname('');
-          }}>Clock in</button>
+          }}
+          disabled={taskname.length === 0}
+          >Clock in</button>
         </div>
       }
       <table>
